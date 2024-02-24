@@ -1,30 +1,30 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-    // phoneno: {
-    //     type: String,
-    //     required: true
-    // },
+    phoneno: {
+        type: String,
+        // required: true
+    },
     // countrycode: {
     //     value: {
     //         type: String,
-    //         required: true
+    //         // required: true
     //     },
     //     label: {
     //         type: String,
     //         required: true
     //     }
     // },
-    // location: {
-    //     latitude: {
-    //         type: String,
-    //         required: true
-    //     },
-    //     longitude: {
-    //         type: String,
-    //         required: true
-    //     }
-    // },
+    location: {
+        latitude: {
+            type: String,
+            // required: true
+        },
+        longitude: {
+            type: String,
+            // required: true
+        }
+    },
     ipaddress :{
         type : String
     }
